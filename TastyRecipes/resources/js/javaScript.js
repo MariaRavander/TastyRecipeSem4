@@ -36,7 +36,7 @@ $(document).ready(function() {
        
     }
     
-    function Conversation(entryToAdd) {
+    function Comment(entryToAdd) {
         
         var self = this;
         self.entryToAdd = entryToAdd;
@@ -92,6 +92,6 @@ $(document).ready(function() {
             
     var entryToAdd = new EntryToAdd();
     ko.applyBindings(entryToAdd, document.getElementById('newComment'));
-    ko.applyBindings(new Conversation(entryToAdd), document.getElementById('commentField'));
+    ko.applyBindings(new Comment(entryToAdd), document.getElementById('commentField'));
 
 });
